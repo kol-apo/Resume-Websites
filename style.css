@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -13,12 +13,60 @@ h1, h2 {
     text-align: center;
 }
 
+.kolapo{
+    color: #f4f4f4;
+}
 /* Header */
+#main-header {
+    background-color: #767676;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* General header styles */
 #main-header {
     background-color: #333;
     color: #fff;
     padding: 30px;
     text-align: center;
+}
+
+/* Flexbox for positioning text and image side by side */
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 120px;
+}
+
+/* Profile image styling */
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
 }
 
 button {
@@ -54,7 +102,7 @@ section.show {
 }
 
 /* Experience Section */
-.experience-item {
+.my-experience {
     margin-bottom: 20px;
 }
 
